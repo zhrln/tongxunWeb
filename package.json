@@ -1,5 +1,5 @@
 {
-  "name": "hltx",
+  "name": "tongxunWeb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "server": "node ./server/bin/www.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "zhangrui",
+  "license": "Mozilla",
   "devDependencies": {
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
