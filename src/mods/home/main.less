@@ -1,0 +1,109 @@
+@import "~comm/reset";
+
+html {
+  background-color: #e5e5e5;
+}
+
+body {
+  &::before{
+    content: '\200b';
+    display: block;
+    height: 20/64rem;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #838383;
+    box-shadow: 0 1px #f6f6f6;
+  }
+
+  #main {
+    width: 10rem;
+    margin: 0 auto;
+    & > header {
+      padding-top: 70/64rem;
+      text-align: center;
+      h1 {
+        color: #010508;
+        font-size: 80/64rem;
+      }
+      h2 {
+        color: #555;
+        font-size: 28/64rem;
+        height: 60/64rem;
+        line-height: 60/64rem;
+        margin-top: 20/64rem;
+        padding: 0 5/64rem;
+        border: 2/64rem dashed #000;
+        border-left: none;
+        border-right: none;
+        display: inline-block;
+      }
+    }
+  }
+
+  .main-nav {
+    text-align: center;
+    margin-top: 60/64rem;
+    & > a {
+      display: inline-block;
+      color: #fff;
+      font-size: 24/64rem;
+      padding: 10/64rem 18/64rem;
+      margin: 0 10/64rem;
+      background-color: #1a1917;
+      border-radius: 6/64rem;
+      box-shadow: 0 0 0 7/64rem rgba(0,0,0,.05);
+      &.on {
+        background-color: #1a2dc9;
+      }
+    }
+  }
+
+  .content-box {
+    width: 520/64rem;
+    margin: 60/64rem auto 0;
+    & > h3 {
+      font-size: 28/64rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .m-top-box {
+      margin-top: 30/64rem;
+    }
+
+    .link-dl {
+      display: inline-block;
+      width: 400/64rem;
+      height: 84/64rem;
+      line-height: 84/64rem;
+      border-radius: 8/64rem;
+      background-color: #333;
+      font-size: 28/64rem;
+      color: #fff;
+      &.android {
+
+      }
+      &.ios {
+
+      }
+    }
+    .card-item {
+      display: inline-block;
+      width: 33.3%;
+      text-align: center;
+      margin-bottom: 10/64rem;
+      img {
+        display: inline-block;
+        width: 160/64rem;
+        height: 100/64rem;
+      }
+    }
+    .text-item {
+      p {
+        font-size: 24/64rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}
