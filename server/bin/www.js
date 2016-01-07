@@ -25,8 +25,8 @@ app.use(require('koa-html-minifier')({
 // 渲染
 ejs(app, {
     root: 'src/pages',
-    layout: false,
-    viewExt: 'html',
+    layout: 'common/layout',
+    viewExt: 'ejs',
     cache: false,
     debug: false
 });

@@ -8,7 +8,9 @@ module.exports = function(app){
 
     // 首页
     app.use(route.get('/', function *(){
-        yield this.render('home');
+        yield this.render('home', {
+            title: '互联通讯'
+        });
     }));
 
     // 资源文件
